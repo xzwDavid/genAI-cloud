@@ -1,0 +1,82 @@
+/* ========================================= 
+   Global Variables and default settings
+   ========================================= */
+/* material icons */
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded');
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,700;1,200;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,400;0,600;1,200;1,400;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap');
+
+* {
+    --champaign-gray:   #404041;
+    --champaign-blue:   #7db2e6;
+    --champaign-orange: #f4b248;
+    --champaign-red:    #724642;
+    --mint-cream:       #f0f5ea;
+    --light-blue:       #c7e6eb;
+    --anti-flash-white: #f6f6f6;
+    --auburn:           #9b2226;
+    --highlight-blue:   #0f7ca0;
+    --soft-red:         #e76e6e;
+    --soft-green:       #8ced69;
+    --soft-blue:        #87b9ec;
+    --inactive-border-black: #00000036;
+    --navbar-height: 50px;
+    --big-btn-height: 35px;
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+
+    --soft-convex: 3px 3px 10px var(--inactive-border-black),
+                   -3px -3px 10px white;
+}
+
+
+html {
+    width: 100%;
+    height: 100%;
+    color: black;
+    overflow: hidden;
+    font-family: "Nunito";
+    font-size: 14px;
+    font-weight: 1200;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+button {
+    user-select:           none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+    -moz-user-select:      none; /* Old versions of Firefox */
+    -webkit-user-select:   none; /* Safari */
+    -webkit-touch-callout: none; /* iOS Safari */
+}
+
+h1::selection, b::selection, span::selection, p::selection {
+    color: salmon;
+    background-color: var(--champaign-gray);
+}
+
+.convex {
+    box-shadow: 4px 4px 10px #0000006f,
+                -4px -4px 10px #FFFFFF;
+}
+
+.concave {
+    box-shadow: inset 4px 4px 10px #00000060,
+                inset -4px -4px 10px #FFFFFF;
+    background-color: transparent!important;
+}

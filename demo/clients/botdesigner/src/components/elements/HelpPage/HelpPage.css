@@ -1,0 +1,6 @@
+#help {
+    display: flex;
+    width: var(--tab-width);
+    height: var(--tab-height);
+    background-color: crimson;
+}

@@ -1,0 +1,17 @@
+.togglebtn {
+    display: inline-flex;
+    flex-direction: row;
+    gap: 10px;
+    width: auto;
+    height: var(--big-btn-height);
+    align-items: center;
+    padding: 0 10px;
+    border: 1px solid var(--inactive-border-black);
+    border-radius: calc(var(--big-btn-height) * .1);
+    color: var(--inactive-border-black);
+    background-color: transparent;
+}
+
+.togglebtn:hover {
+    cursor: pointer;
+}

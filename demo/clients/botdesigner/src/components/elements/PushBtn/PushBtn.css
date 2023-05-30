@@ -1,0 +1,28 @@
+.pushbtn {
+    display: inline-flex;
+    flex-direction: row;
+    gap: 5px;
+    width: auto;
+    height: 30px;
+    padding: 0 10px;
+    align-items: center;
+    font-weight: 1000;
+    border: 1px solid var(--inactive-border-black);
+    border-radius: 30px;
+    color: white;
+    background-color: transparent;
+    box-shadow: inset .75px .75px 1.3px #ffffff36,
+                inset -.75px -.75px 1.3px #00000036;
+}
+
+.pushbtn:hover {
+    cursor: pointer;
+    border-color: var(--champaign-orange);
+    color: var(--champaign-orange);
+}
+
+.pushbtn:active {
+    transform: scale(0.99) translate3d(.3px, .3px, 0);
+    box-shadow: inset 1px 1px 10px #00000036,
+                inset -1px -1px 10px #ffffff36;
+}

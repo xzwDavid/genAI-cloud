@@ -1,0 +1,132 @@
+.influencer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 50%;
+    height: 100%;
+    padding: var(--app-gap);
+}
+
+.influencer > .topbar {
+    display: inline-flex;
+    flex-direction: row;
+    gap: 5px;
+    width: 100%;
+    height: var(--big-btn-height);
+    font-size: 18px;
+    align-items: center
+}
+
+.influencer > .topbar > .toolbar {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    width: 60%;
+}
+
+.influencer > .topbar > .userinfo_container {
+    display: inline-flex;
+    gap: var(--app-gap);
+    width: 40%;
+    text-align: right;
+    align-items: center;
+    justify-content: right;
+}
+
+
+
+
+
+
+
+/* ==================== 
+   dashboard
+   ==================== */
+.dashboard {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding: var(--app-gap);
+    border: 1px solid var(--inactive-border-black);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.dashboard > span {
+    height: 30px;
+    padding: 0 5px;
+}
+
+
+.editor_log_container {
+    display: flex;
+    flex-direction: column;
+    gap: var(--app-gap);
+    width: 100%;
+    height: calc(100% - 30px - 10px);
+    padding: var(--app-gap);
+    margin-top: 10px;
+    overflow-y: scroll;
+}
+.editor_log_container::-webkit-scrollbar {
+    display: none;
+}
+
+
+.editorLog {
+    display: inline-flex;
+    flex-direction: row;
+    gap: var(--app-gap);
+    width: 100%;
+    /* min-height: 70px; */
+    padding: var(--app-gap);
+    border: 1px solid transparent;
+    border-radius: 10px;
+    white-space: pre-wrap;
+    overflow-y: hidden;
+
+    /* filter: brightness(1.1) saturate(.45); */
+
+    transition:         .2s; 
+    -o-transition:      .2s; /* Opera */
+    -moz-transition:    .2s; /* Old versions of Firefox */
+    -webkit-transition: .2s; /* Safari */
+}
+
+.editorLog:hover {
+    cursor: pointer;
+    transform: translate(-2px, -2px);
+    border: 1px solid var(--champaign-gray);
+    box-shadow: 2px 2px 3px #00000045;
+    /* filter: saturate(1); */
+}
+
+.editorLog > img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    /* object-fit: cover; */
+}
+
+.editorLog > i {
+    width: 50px;
+    height: 50px;
+}
+
+.editorLog > .details_container {
+    width: calc(100% - 100px);
+}
+.editorLog > .details_container > h1 {
+    font-size: 16px;
+    font-weight: 1000;
+    margin-bottom: 5px;
+}
+.editorLog > .details_container > h1 > b {
+    text-transform: capitalize;
+    text-decoration: underline;
+    opacity: 0.5;
+    font-weight: 1400;
+}
+/* .editorLog > .details_container > h1 > p {
+
+} */
