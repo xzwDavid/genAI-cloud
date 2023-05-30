@@ -17,7 +17,7 @@ import json
 #os.environ["OPENAI_API_TYPE"] = "azure"
 
 
-openai.api_key = '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'
+openai.api_key = ''
 
 
 html_path = Path(__file__).parents[2].joinpath("clients/botdesigner/build")
